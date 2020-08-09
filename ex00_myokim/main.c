@@ -6,7 +6,7 @@
 /*   By: mijeong <minje70@naver.com>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/08 14:01:12 by mijeong           #+#    #+#             */
-/*   Updated: 2020/08/09 22:14:05 by mijeong          ###   ########.fr       */
+/*   Updated: 2020/08/09 22:38:53 by mijeong          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,7 @@ int		main(int argc, char **argv)
 	grid_init(grid);
 	grid_input_init(argv, grid);
 	building(grid, 1);
+	print_result(grid);
 	i = 0;
 	while (i < 6)
 	{

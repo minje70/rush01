@@ -6,7 +6,7 @@
 /*   By: mijeong <minje70@naver.com>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/08 16:37:33 by mijeong           #+#    #+#             */
-/*   Updated: 2020/08/09 21:56:34 by mijeong          ###   ########.fr       */
+/*   Updated: 2020/08/09 22:44:46 by mijeong          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,9 @@ int		check_down_col(int **grid, int i);
 void	print_result(int **grid);
 int		next_permutation(int *grid);
 int		promising(int **grid, int i);
+void	check_while(char **grid, int j, int i);
 
-void temp_init(int **grid, int i)
+void	temp_init(int **grid, int i)
 {
 	int	j;
 
@@ -39,53 +40,25 @@ void	building(int **grid, int i)
     int j;
 	int result;
 
-    if( i == 5)
+    if (i == 5)
 	{
 		j = 1;
-		while (j < 5)
-		{
-			if (!check_up_col(grid, j) || !check_down_col(grid, j))
-			{
-				printf("-------------------\n");
-				printf("col is not matching\n");
-				print_result(grid);
-				next_permutation(&grid[i - 1][1]);
-				building(grid, i - 1) ;
-			}
-			j++;
-		}
-
+		check_while(grid, j, i);
 	}
 	else
 	{
-		printf("-------------------\n");
-		print_result(grid);
 		result = promising(grid, i);
 		if (result == 0)
-		{
 			building(grid, i);
-		}
 		else if (result == 2)
 			return ;
 		else
-		{
 			building(grid, i + 1);
-		}
 		result = promising(grid, i);
-		if (result == 0)
-		{
-			building(grid, i);
-		}
-		else if (result == 2)
-			return ;
-		else
-		{
-			building(grid, i + 1);
-		}
 	}
 }
 
-int promising(int **grid, int i)
+int		promising(int **grid, int i)
 {
 	int	key;
 	int	j;
@@ -118,8 +91,7 @@ int promising(int **grid, int i)
 	}
     return key;
 }
-
-int	look_up(int **grid, int i)
+int		look_up(int **grid, int i)
 {
 	int	j;
 	int save_i;
@@ -137,4 +109,16 @@ int	look_up(int **grid, int i)
 		j++;
 	}
 	return (1);
+}
+void	check_while(char **grid, int j, int i)
+{
+	while (j < 5)
+	{
+		if (!check_up_col(grid, j) || !check_down_col(grid, j))
+		{
+			next_permutation(&grid[i - 1][1]);
+			building(grid, i - 1) ;
+		}
+		j++;
+	}
 }
