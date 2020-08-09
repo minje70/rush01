@@ -6,7 +6,7 @@
 /*   By: mijeong <minje70@naver.com>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/08 20:01:55 by mijeong           #+#    #+#             */
-/*   Updated: 2020/08/09 22:52:34 by mijeong          ###   ########.fr       */
+/*   Updated: 2020/08/09 22:55:52 by mijeong          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 void	swap(int *a, int *b)
 {
 	int	temp;
+
 	temp = *a;
 	*a = *b;
 	*b = temp;
@@ -29,12 +30,12 @@ int		next_permutation(int *a)
 	while (i > 0 && a[i] <= a[i - 1])
 		i -= 1;
 	if (i <= 0)
-		return 0;
+		return (0);
 	j = 3;
 	while (a[i - 1] >= a[j])
 		j -= 1;
 	swap(&a[i - 1], &a[j]);
-		j = 3;
+	j = 3;
 	while (i < j)
 	{
 		swap(&a[i], &a[j]);
