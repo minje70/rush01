@@ -6,7 +6,7 @@
 /*   By: mijeong <minje70@naver.com>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/08 14:09:12 by mijeong           #+#    #+#             */
-/*   Updated: 2020/08/09 22:18:19 by mijeong          ###   ########.fr       */
+/*   Updated: 2020/08/09 22:59:49 by mijeong          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_check_input2(char **argv);
 int	except(char **argv)
 {
 	int	i;
-	int j;
+	int	j;
 
 	i = 0;
 	j = 1;
@@ -38,6 +38,7 @@ int	except(char **argv)
 		return (1);
 	return (0);
 }
+
 int	ft_strlen(char **argv)
 {
 	int	i;
@@ -47,6 +48,7 @@ int	ft_strlen(char **argv)
 		i++;
 	return (i);
 }
+
 int	ft_check_input(char **argv)
 {
 	int i;
@@ -62,7 +64,7 @@ int	ft_check_input(char **argv)
 		{
 			return (1);
 		}
-		else if (argv[1][i] == '3' && argv[1][i+ 8] >= '3')
+		else if (argv[1][i] == '3' && argv[1][i + 8] >= '3')
 		{
 			return (1);
 		}
@@ -74,6 +76,7 @@ int	ft_check_input(char **argv)
 	}
 	return (0);
 }
+
 int	ft_check_input2(char **argv)
 {
 	int i;
