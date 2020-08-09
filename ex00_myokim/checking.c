@@ -6,7 +6,7 @@
 /*   By: mijeong <minje70@naver.com>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/08 16:37:33 by mijeong           #+#    #+#             */
-/*   Updated: 2020/08/09 22:44:46 by mijeong          ###   ########.fr       */
+/*   Updated: 2020/08/09 22:45:43 by mijeong          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int		check_down_col(int **grid, int i);
 void	print_result(int **grid);
 int		next_permutation(int *grid);
 int		promising(int **grid, int i);
-void	check_while(char **grid, int j, int i);
+void	check_while(int **grid, int j, int i);
 
 void	temp_init(int **grid, int i)
 {
@@ -110,7 +110,7 @@ int		look_up(int **grid, int i)
 	}
 	return (1);
 }
-void	check_while(char **grid, int j, int i)
+void	check_while(int **grid, int j, int i)
 {
 	while (j < 5)
 	{
