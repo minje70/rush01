@@ -6,12 +6,11 @@
 /*   By: mijeong <minje70@naver.com>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/08 20:01:55 by mijeong           #+#    #+#             */
-/*   Updated: 2020/08/09 18:39:41 by mijeong          ###   ########.fr       */
+/*   Updated: 2020/08/09 21:56:34 by mijeong          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include <stdio.h>
 
 void swap(int *a, int *b)
 {

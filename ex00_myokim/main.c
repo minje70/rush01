@@ -6,13 +6,12 @@
 /*   By: mijeong <minje70@naver.com>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/08 14:01:12 by mijeong           #+#    #+#             */
-/*   Updated: 2020/08/09 20:42:36 by mijeong          ###   ########.fr       */
+/*   Updated: 2020/08/09 21:56:34 by mijeong          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdlib.h>
-#include <stdio.h>
 
 int		assign(int **grid);
 void	print_result(int **grid);

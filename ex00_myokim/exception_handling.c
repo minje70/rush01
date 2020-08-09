@@ -6,12 +6,11 @@
 /*   By: mijeong <minje70@naver.com>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/08 14:09:12 by mijeong           #+#    #+#             */
-/*   Updated: 2020/08/09 20:56:24 by mijeong          ###   ########.fr       */
+/*   Updated: 2020/08/09 21:56:34 by mijeong          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include <stdio.h>
 
 int	ft_strlen(char **argv);
 int ft_check_input(char **argv);

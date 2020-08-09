@@ -6,12 +6,11 @@
 /*   By: mijeong <minje70@naver.com>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/08 16:37:33 by mijeong           #+#    #+#             */
-/*   Updated: 2020/08/09 21:46:24 by mijeong          ###   ########.fr       */
+/*   Updated: 2020/08/09 21:56:34 by mijeong          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include <stdio.h>
 
 int		look_up(int **grid, int i);
 int		check_left_row(int **grid, int i);
