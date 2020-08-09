@@ -6,7 +6,7 @@
 /*   By: mijeong <minje70@naver.com>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/08 14:01:12 by mijeong           #+#    #+#             */
-/*   Updated: 2020/08/09 21:56:34 by mijeong          ###   ########.fr       */
+/*   Updated: 2020/08/09 22:14:05 by mijeong          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,18 +15,18 @@
 
 int		assign(int **grid);
 void	print_result(int **grid);
-int 	except(char **argv);
+int		except(char **argv);
 void	grid_init(int **grid);
 void	grid_input_init(char **argv, int **grid);
 void	building(int **grid, int i);
 
-int	main(int argc, char **argv)
+int		main(int argc, char **argv)
 {
 	int	**grid;
 	int	i;
 
 	grid = (int **)malloc(sizeof(int *) * 6);
-	if ( argc != 2 || except(argv))
+	if (argc != 2 || except(argv))
 	{
 		write(1, "Error\n", 6);
 		return (1);

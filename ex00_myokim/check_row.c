@@ -6,10 +6,9 @@
 /*   By: mijeong <minje70@naver.com>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/08 18:27:00 by mijeong           #+#    #+#             */
-/*   Updated: 2020/08/09 21:56:34 by mijeong          ###   ########.fr       */
+/*   Updated: 2020/08/09 22:13:16 by mijeong          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 int	check_left_row(int **grid, int i);
 int check_right_row(int **grid, int i);
